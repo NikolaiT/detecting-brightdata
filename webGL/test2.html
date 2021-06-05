@@ -1,0 +1,58 @@
+<html><head>
+	<title>webGL test</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link href="testIcon.svg" type="image/png" rel="icon">
+	<link href="testIcon.svg" type="image/png" rel="shortcut icon">
+	<link rel="stylesheet" href="../default.css" type="text/css">
+	<style>
+		th {
+			text-align: right;
+		}
+	</style>
+<style type="text/css"></style><style>
+        mouse_pointer {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            z-index: 10000;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,.4);
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: -10px 0 0 -10px;
+            padding: 0;
+            transition: background .2s, border-radius .2s, border-color .2s;
+        }
+        mouse_pointer.button_1 {
+            transition: none;
+            background: rgba(0,0,0,0.9);
+        }
+        mouse_pointer.button_2 {
+            transition: none;
+            border-color: rgba(0,0,255,0.9);
+        }
+        mouse_pointer .debug {
+            position: relative;
+            top: -30px;
+        }</style></head>
+<body>
+<h1>webGL test</h1>
+<h2>Expected result</h2>
+<ul>
+	<li>both webGL versions should be supported (unless you disabled it in the browser settings) - reload if one is showing "not supported"</li>
+	<li>upon page reload the hashes change (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
+	<li>all the image hashes should be the same (offscreen workers are not yet protected by CanvasBlocker)</li>
+	<li>upon page reload some of the parameters  (depending on CanvasBlocker settings - e.g. not in the stealth preset)</li>
+	<li>the "vendor" und "renderer" (also unmasked) parameters reflect the values you chose for them</li>
+</ul>
+<h3>Support</h3>
+<div id="output"><div title="{&quot;0&quot;:429,&quot;255&quot;:143}">webgl: not supported </div><div title="{&quot;64&quot;:429,&quot;255&quot;:143}">webgl2: not supported </div></div>
+<h3>Hashes</h3>
+<div id="hashes"><div>webgl: <table><tr><th>parameter</th><td>fb86443a44537ed8f5ac42e1d671ede4b0ae98c4268a397804e4eca0534ae020</td></tr><tr><th>image</th><td><i>computing</i></td></tr><tr><th>image (offscreen)</th><td>24c8a32df48c60e74aeb32b11ddea24a63716f350db7c4444b8aa6ab2ddbfe92</td></tr><tr><th>image (offscreen worker)</th><td>24c8a32df48c60e74aeb32b11ddea24a63716f350db7c4444b8aa6ab2ddbfe92</td></tr></table></div><div>webgl2: <table><tr><th>parameter</th><td>2a518f4421f37254f2aad00aafeed5488f4235e11a119d5a872b61a63c7c7af7</td></tr><tr><th>image</th><td><i>computing</i></td></tr><tr><th>image (offscreen)</th><td>24c8a32df48c60e74aeb32b11ddea24a63716f350db7c4444b8aa6ab2ddbfe92</td></tr><tr><th>image (offscreen worker)</th><td>24c8a32df48c60e74aeb32b11ddea24a63716f350db7c4444b8aa6ab2ddbfe92</td></tr></table></div></div>
+<h3>Parameters</h3>
+<div id="parameters"><table><tr><td>VENDOR</td><td>WebKit</td></tr><tr><td>RENDERER</td><td>WebKit WebGL</td></tr><tr><td>UNMASKED_VENDOR_WEBGL</td><td>Google Inc.</td></tr><tr><td>UNMASKED_RENDERER_WEBGL</td><td>ANGLE (NVIDIA GeForce GTX 780 Ti Direct3D11 vs_5_0 ps_5_0)</td></tr><tr><td>ACTIVE_TEXTURE</td><td>33984</td></tr><tr><td>ALIASED_LINE_WIDTH_RANGE</td><td>1,1</td></tr><tr><td>ALIASED_POINT_SIZE_RANGE</td><td>1,1024</td></tr><tr><td>ALPHA_BITS</td><td>8</td></tr><tr><td>BLEND</td><td>false</td></tr><tr><td>BLEND_COLOR</td><td>0,0,0,0</td></tr><tr><td>BLEND_DST_ALPHA</td><td>0</td></tr><tr><td>BLEND_DST_RGB</td><td>0</td></tr><tr><td>BLEND_EQUATION</td><td>32774</td></tr><tr><td>BLEND_EQUATION_ALPHA</td><td>32774</td></tr><tr><td>BLEND_EQUATION_RGB</td><td>32774</td></tr><tr><td>BLEND_SRC_ALPHA</td><td>1</td></tr><tr><td>BLEND_SRC_RGB</td><td>1</td></tr><tr><td>BLUE_BITS</td><td>8</td></tr><tr><td>COLOR_CLEAR_VALUE</td><td>0,0,0,0</td></tr><tr><td>COLOR_WRITEMASK</td><td>true,true,true,true</td></tr><tr><td>COMPRESSED_TEXTURE_FORMATS</td><td></td></tr><tr><td>CULL_FACE</td><td>false</td></tr><tr><td>CULL_FACE_MODE</td><td>1029</td></tr><tr><td>DEPTH_BITS</td><td>24</td></tr><tr><td>DEPTH_CLEAR_VALUE</td><td>1</td></tr><tr><td>DEPTH_FUNC</td><td>513</td></tr><tr><td>DEPTH_RANGE</td><td>0,1</td></tr><tr><td>DEPTH_TEST</td><td>false</td></tr><tr><td>DEPTH_WRITEMASK</td><td>true</td></tr><tr><td>DITHER</td><td>true</td></tr><tr><td>DRAW_BUFFER0</td><td>1029</td></tr><tr><td>DRAW_BUFFER1</td><td>1029</td></tr><tr><td>DRAW_BUFFER2</td><td>1029</td></tr><tr><td>DRAW_BUFFER3</td><td>1029</td></tr><tr><td>DRAW_BUFFER4</td><td>1029</td></tr><tr><td>DRAW_BUFFER5</td><td>1029</td></tr><tr><td>DRAW_BUFFER6</td><td>1029</td></tr><tr><td>DRAW_BUFFER7</td><td>1029</td></tr><tr><td>FRAGMENT_SHADER_DERIVATIVE_HINT</td><td>4352</td></tr><tr><td>FRONT_FACE</td><td>2305</td></tr><tr><td>GENERATE_MIPMAP_HINT</td><td>4352</td></tr><tr><td>GREEN_BITS</td><td>8</td></tr><tr><td>IMPLEMENTATION_COLOR_READ_FORMAT</td><td>6408</td></tr><tr><td>IMPLEMENTATION_COLOR_READ_TYPE</td><td>5121</td></tr><tr><td>LINE_WIDTH</td><td>1</td></tr><tr><td>MAX_3D_TEXTURE_SIZE</td><td>8192</td></tr><tr><td>MAX_ARRAY_TEXTURE_LAYERS</td><td>8192</td></tr><tr><td>MAX_CLIENT_WAIT_TIMEOUT_WEBGL</td><td>0</td></tr><tr><td>MAX_COLOR_ATTACHMENTS</td><td>8</td></tr><tr><td>MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS</td><td>50208</td></tr><tr><td>MAX_COMBINED_TEXTURE_IMAGE_UNITS</td><td>32</td></tr><tr><td>MAX_COMBINED_UNIFORM_BLOCKS</td><td>24</td></tr><tr><td>MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS</td><td>50188</td></tr><tr><td>MAX_CUBE_MAP_TEXTURE_SIZE</td><td>16384</td></tr><tr><td>MAX_DRAW_BUFFERS</td><td>8</td></tr><tr><td>MAX_ELEMENTS_INDICES</td><td>2147483647</td></tr><tr><td>MAX_ELEMENTS_VERTICES</td><td>2147483647</td></tr><tr><td>MAX_ELEMENT_INDEX</td><td>2147483647</td></tr><tr><td>MAX_FRAGMENT_INPUT_COMPONENTS</td><td>60</td></tr><tr><td>MAX_FRAGMENT_UNIFORM_BLOCKS</td><td>12</td></tr><tr><td>MAX_FRAGMENT_UNIFORM_COMPONENTS</td><td>1056</td></tr><tr><td>MAX_FRAGMENT_UNIFORM_VECTORS</td><td>2048</td></tr><tr><td>MAX_PROGRAM_TEXEL_OFFSET</td><td>7</td></tr><tr><td>MAX_RENDERBUFFER_SIZE</td><td>32768</td></tr><tr><td>MAX_SAMPLES</td><td>4</td></tr><tr><td>MAX_SERVER_WAIT_TIMEOUT</td><td>0</td></tr><tr><td>MAX_TEXTURE_IMAGE_UNITS</td><td>16</td></tr><tr><td>MAX_TEXTURE_LOD_BIAS</td><td>12</td></tr><tr><td>MAX_TEXTURE_SIZE</td><td>32768</td></tr><tr><td>MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS</td><td>64</td></tr><tr><td>MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS</td><td>4</td></tr><tr><td>MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS</td><td>64</td></tr><tr><td>MAX_UNIFORM_BLOCK_SIZE</td><td>16384</td></tr><tr><td>MAX_UNIFORM_BUFFER_BINDINGS</td><td>24</td></tr><tr><td>MAX_VARYING_COMPONENTS</td><td>128</td></tr><tr><td>MAX_VARYING_VECTORS</td><td>30</td></tr><tr><td>MAX_VERTEX_ATTRIBS</td><td>16</td></tr><tr><td>MAX_VERTEX_OUTPUT_COMPONENTS</td><td>64</td></tr><tr><td>MAX_VERTEX_TEXTURE_IMAGE_UNITS</td><td>24</td></tr><tr><td>MAX_VERTEX_UNIFORM_BLOCKS</td><td>12</td></tr><tr><td>MAX_VERTEX_UNIFORM_COMPONENTS</td><td>1036</td></tr><tr><td>MAX_VERTEX_UNIFORM_VECTORS</td><td>4096</td></tr><tr><td>MAX_VIEWPORT_DIMS</td><td>32767,32767</td></tr><tr><td>MIN_PROGRAM_TEXEL_OFFSET</td><td>-8</td></tr><tr><td>PACK_ALIGNMENT</td><td>4</td></tr><tr><td>PACK_ROW_LENGTH</td><td>0</td></tr><tr><td>PACK_SKIP_PIXELS</td><td>0</td></tr><tr><td>PACK_SKIP_ROWS</td><td>0</td></tr><tr><td>POLYGON_OFFSET_FACTOR</td><td>0</td></tr><tr><td>POLYGON_OFFSET_FILL</td><td>false</td></tr><tr><td>POLYGON_OFFSET_UNITS</td><td>0</td></tr><tr><td>RASTERIZER_DISCARD</td><td>false</td></tr><tr><td>READ_BUFFER</td><td>1029</td></tr><tr><td>RED_BITS</td><td>8</td></tr><tr><td>SAMPLES</td><td>4</td></tr><tr><td>SAMPLE_ALPHA_TO_COVERAGE</td><td>false</td></tr><tr><td>SAMPLE_BUFFERS</td><td>1</td></tr><tr><td>SAMPLE_COVERAGE</td><td>false</td></tr><tr><td>SAMPLE_COVERAGE_INVERT</td><td>false</td></tr><tr><td>SAMPLE_COVERAGE_VALUE</td><td>1</td></tr><tr><td>SCISSOR_BOX</td><td>0,0,11,13</td></tr><tr><td>SCISSOR_TEST</td><td>false</td></tr><tr><td>SHADING_LANGUAGE_VERSION</td><td>WebGL GLSL ES 1.0 (OpenGL ES GLSL ES 1.0 Chromium)</td></tr><tr><td>STENCIL_BACK_FAIL</td><td>7680</td></tr><tr><td>STENCIL_BACK_FUNC</td><td>519</td></tr><tr><td>STENCIL_BACK_PASS_DEPTH_FAIL</td><td>7680</td></tr><tr><td>STENCIL_BACK_PASS_DEPTH_PASS</td><td>7680</td></tr><tr><td>STENCIL_BACK_REF</td><td>0</td></tr><tr><td>STENCIL_BACK_VALUE_MASK</td><td>4294967295</td></tr><tr><td>STENCIL_BACK_WRITEMASK</td><td>4294967295</td></tr><tr><td>STENCIL_BITS</td><td>0</td></tr><tr><td>STENCIL_CLEAR_VALUE</td><td>0</td></tr><tr><td>STENCIL_FAIL</td><td>7680</td></tr><tr><td>STENCIL_FUNC</td><td>519</td></tr><tr><td>STENCIL_PASS_DEPTH_FAIL</td><td>7680</td></tr><tr><td>STENCIL_PASS_DEPTH_PASS</td><td>7680</td></tr><tr><td>STENCIL_REF</td><td>0</td></tr><tr><td>STENCIL_TEST</td><td>false</td></tr><tr><td>STENCIL_VALUE_MASK</td><td>4294967295</td></tr><tr><td>STENCIL_WRITEMASK</td><td>4294967295</td></tr><tr><td>SUBPIXEL_BITS</td><td>4</td></tr><tr><td>TRANSFORM_FEEDBACK_ACTIVE</td><td>false</td></tr><tr><td>TRANSFORM_FEEDBACK_PAUSED</td><td>false</td></tr><tr><td>UNIFORM_BUFFER_OFFSET_ALIGNMENT</td><td>4</td></tr><tr><td>UNPACK_ALIGNMENT</td><td>4</td></tr><tr><td>UNPACK_COLORSPACE_CONVERSION_WEBGL</td><td>37444</td></tr><tr><td>UNPACK_FLIP_Y_WEBGL</td><td>false</td></tr><tr><td>UNPACK_IMAGE_HEIGHT</td><td>0</td></tr><tr><td>UNPACK_PREMULTIPLY_ALPHA_WEBGL</td><td>false</td></tr><tr><td>UNPACK_ROW_LENGTH</td><td>0</td></tr><tr><td>UNPACK_SKIP_IMAGES</td><td>0</td></tr><tr><td>UNPACK_SKIP_PIXELS</td><td>0</td></tr><tr><td>UNPACK_SKIP_ROWS</td><td>0</td></tr><tr><td>VERSION</td><td>WebGL 1.0 (OpenGL ES 2.0 Chromium)</td></tr><tr><td>VIEWPORT</td><td>0,0,11,13</td></tr></table></div>
+<script src="testAPI.js"></script>
+<script src="webGL-Test.js"></script>
+<mouse_pointer></mouse_pointer></body></html>

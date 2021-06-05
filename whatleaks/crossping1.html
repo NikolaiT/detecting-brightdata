@@ -1,0 +1,39 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CrossPing</title>
+  <style type="text/css"></style><style>
+        mouse_pointer {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            z-index: 10000;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background: rgba(0,0,0,.4);
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: -10px 0 0 -10px;
+            padding: 0;
+            transition: background .2s, border-radius .2s, border-color .2s;
+        }
+        mouse_pointer.button_1 {
+            transition: none;
+            background: rgba(0,0,0,0.9);
+        }
+        mouse_pointer.button_2 {
+            transition: none;
+            border-color: rgba(0,0,255,0.9);
+        }
+        mouse_pointer .debug {
+            position: relative;
+            top: -30px;
+        }</style></head>
+  <body>
+    <div>
+      <h3>Cross Ping Result</h3>
+      <pre id="pingResult">{<br>  "browserToServer-0": 1720.1550006866455,<br>  "serverToExternalIP-0": "71.217.212.138 - OK 203.603 ms",<br>  "browserToServer-1": 2303.6300018429756,<br>  "browserToServer-2": 2304.7950007021427,<br>  "browserToServer-3": 2307.1300014853477,<br>  "browserToServer-4": 2307.514999061823,<br>  "serverToExternalIP-1": "71.217.212.138 - OK 206.111 ms",<br>  "serverToExternalIP-2": "71.217.212.138 - OK 196.625 ms",<br>  "serverToExternalIP-3": "71.217.212.138 - OK 182.566 ms",<br>  "serverToExternalIP-4": "71.217.212.138 - OK 192.794 ms"<br>}</pre>
+    </div>
+  
+<mouse_pointer></mouse_pointer></body></html>

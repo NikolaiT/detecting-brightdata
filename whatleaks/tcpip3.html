@@ -1,0 +1,40 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TCP/IP Fingerprint</title>
+<style>
+      mouse_pointer {
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          z-index: 10000;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          background: rgba(0,0,0,.4);
+          border: 1px solid white;
+          border-radius: 10px;
+          margin: -10px 0 0 -10px;
+          padding: 0;
+          transition: background .2s, border-radius .2s, border-color .2s;
+      }
+      mouse_pointer.button_1 {
+          transition: none;
+          background: rgba(0,0,0,0.9);
+      }
+      mouse_pointer.button_2 {
+          transition: none;
+          border-color: rgba(0,0,255,0.9);
+      }
+      mouse_pointer .debug {
+          position: relative;
+          top: -30px;
+      }</style><style type="text/css"></style></head>
+<body>
+  <div>
+    <h3>TCP/IP Fingerprint</h3>
+    <pre id="tcpipfp">{<br>  "avgScoreOsClass": {<br>    "Android": "avg=5.97, N=779",<br>    "Chrome OS": "avg=4.94, N=8",<br>    "Linux": "avg=4.77, N=422",<br>    "Windows": "avg=4.04, N=1019",<br>    "iOS": "avg=5.27, N=447",<br>    "macOS": "avg=5.24, N=520"<br>  },<br>  "bestNGuesses": [<br>    {<br>      "os": "Linux",<br>      "score": "7.5/10"<br>    },<br>    {<br>      "os": "Windows",<br>      "score": "7.5/10"<br>    },<br>    {<br>      "os": "Linux",<br>      "score": "7.5/10"<br>    }<br>  ]<br>}</pre>
+    Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+  </div>
+
+<mouse_pointer></mouse_pointer></body></html>
